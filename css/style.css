@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Exo', serif;
 }
 
 body {
@@ -304,6 +305,18 @@ footer {
 .mich-img > img {
   max-width: 200px;
   max-height: 200px; 
+}
+
+.resume embed {
+  height: 1000px; 
+  width: 90%; 
+  margin-right: 20px;
+  margin-left: 20px; 
+}
+
+.social {
+  width: 100px;
+  height: 100px; 
 }
 
 
