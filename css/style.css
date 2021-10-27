@@ -212,7 +212,7 @@ footer {
   grid-column: 1 / 2;
   justify-content: center;
   display: grid;
-  justify-content: center;
+  align-items:stretch;
 }
 
 .reach-pic > img {
@@ -235,7 +235,7 @@ footer {
   grid-column: 1 / 2;
   justify-content: center;
   display: grid;
-  justify-content: center;
+  align-items: center;
 }
 
 .cmu-pic > img {
