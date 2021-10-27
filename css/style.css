@@ -88,7 +88,7 @@ footer {
   background-color:#415280; 
   padding: 14px 28px;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 8px;
   justify-content: center;
   box-shadow: 0 4px 4px;
@@ -161,7 +161,7 @@ footer {
 }
 
 .mfans-pic {
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   grid-column: 1 / 2;
   justify-content: center;
   display: grid;
@@ -175,9 +175,61 @@ footer {
 }
 
 .mfans-desc {
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   grid-column: 2 /3;
 }
+
+.mfans-desc a, .reach-desc a {
+  margin: auto;
+  width: 50%;
+  background-color: #415280; 
+  padding: 7px 14px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0 4px 4px;
+  text-decoration: none;
+  color: #ffffff; 
+}
+
+.mfans-desc h3 {
+  font-size: 22px; 
+}
+
+.mfans-desc a:hover, .reach-desc a:hover {
+  background-color: #555;
+  text-decoration: underline;
+}
+
+.mfans-desc li, .reach-desc li {
+  padding: 15px 0px; 
+  list-style-position: inside;
+}
+
+.reach-pic {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  justify-content: center;
+  display: grid;
+  justify-content: center;
+}
+
+.reach-pic > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.reach-desc {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.reach-desc h3 {
+  font-size: 22px; 
+}
+
 
 
 @media screen and (min-width: 850px) {
