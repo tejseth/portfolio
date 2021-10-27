@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
   <title>Contact</title>
 </head>
 
@@ -25,12 +26,22 @@
   </div>
 </nav>
   <h1>Contact</h1>
+  <br>
 </header>
 
 <main>
-  <p>Hi #5</p>
-  <div class = "social">
-    <a href = ""><i class = "fab fa-twitter"></i></a>
+  <div class = "form-box">
+    <form action = "action_page.php">
+      <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fullname" placeholder="Tej Seth">
+      <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="tejseth@umich.edu">
+      <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone_num" placeholder="999-999-9999">
+      <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Hi Tej, ..." style="height:200px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
   </div>
 </main>
 

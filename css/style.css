@@ -314,9 +314,50 @@ footer {
   margin-left: 20px; 
 }
 
-.social {
+.social > fab {
   width: 100px;
   height: 100px; 
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #000000; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize:both; 
+}
+
+input[type=submit] {
+  margin: auto;
+  width: 40%;
+  background-color:#415280; 
+  padding: 14px 28px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0 4px 4px;
+  text-decoration: none;
+  color: #ffffff; 
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #555;
+  text-decoration: underline;
+}
+
+.form-box {
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 80%; 
+  display: flex;
+  margin: auto;
+  padding-top: 20px;
 }
 
 
