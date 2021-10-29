@@ -195,7 +195,7 @@ footer {
   color: #ffffff; 
 }
 
-.mfans-desc h3 {
+.mfans-desc h2 {
   font-size: 22px; 
 }
 
@@ -229,7 +229,7 @@ footer {
   grid-column: 2 / -1;
 }
 
-.reach-desc h3 {
+.reach-desc h2 {
   font-size: 22px; 
 }
 
@@ -271,7 +271,7 @@ footer {
   color: #ffffff; 
 }
 
-.first-card h3, .second-card h3 {
+.first-card h2, .second-card h2 {
   text-align: center; 
   padding-bottom: 10px; 
   font-size: 20px; 
