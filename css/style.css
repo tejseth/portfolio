@@ -53,9 +53,11 @@ body {
   background-color: #ffffff;
   color: #000000; 
   border: 2px solid #000000; 
+  text-decoration: overline;
 }
 
 h1 {
+  font-size: 30px; 
   padding-top: 10px;
   text-align:center;
 }
@@ -181,7 +183,8 @@ footer {
   grid-column: 2 / -1;
 }
 
-.mfans-desc a, .reach-desc a {
+.mfans-desc a, .reach-desc a, .shiny-desc a, .nflfastr-desc a, .github-desc a,
+.bpa-desc a {
   margin: auto;
   width: 50%;
   background-color: #415280; 
@@ -195,16 +198,19 @@ footer {
   color: #ffffff; 
 }
 
-.mfans-desc h2 {
+.mfans-desc h2, .cmu-desc h2, .shiny-desc h2, .nflfastr-desc h2, 
+.gtihub-desc h2, .bpa-desc h2 {
   font-size: 22px; 
 }
 
-.mfans-desc a:hover, .reach-desc a:hover {
+.mfans-desc a:hover, .reach-desc a:hover, .shiny-desc a:hover, .nflfastr-desc a:hover,
+.github-desc a:hover, .cfbfastr-desc a:hover, .bpa-desc a:hover {
   background-color: #555;
   text-decoration: underline;
 }
 
-.mfans-desc li, .reach-desc li {
+.mfans-desc li, .reach-desc li, .shiny-desc li, .nflfastr-desc li, 
+.github-desc li, .cfbfastr-desc li, .bpa-desc li {
   padding: 10px 0px; 
   list-style-position: inside;
 }
@@ -229,7 +235,8 @@ footer {
   grid-column: 2 / -1;
 }
 
-.reach-desc h2 {
+.reach-desc h2, .github-desc h2, .cfbfastr-desc h2,
+.bpa-desc h2 {
   font-size: 22px; 
 }
 
@@ -250,6 +257,82 @@ footer {
 
 .cmu-desc {
   grid-row: 5 / 6;
+  grid-column: 2 / -1;
+  padding: 5px 5px; 
+}
+
+.shiny-pic {
+  grid-row: 6 / 7;
+  grid-column: 1 / 2; 
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+
+.shiny-pic > img {
+  max-width: 92%;
+  max-height: 92%;
+  align-self: center; 
+}
+
+.shiny-desc {
+  grid-row: 6 / 7;
+  grid-column: 2 / -1;
+  padding: 5px 5px; 
+}
+
+.nflfastr-pic {
+  grid-row: 7 / 8;
+  grid-column: 1 / 2;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+
+.nflfastr-desc {
+  grid-row: 7 / 8;
+  grid-column: 2 / -1;
+  padding: 5px 5px; 
+}
+
+.github-pic {
+  grid-row: 8 / 9;
+  grid-column: 1 / 2;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+
+.github-desc {
+  grid-row: 8 / 9;
+  grid-column: 2 / -1;
+  padding: 5px 5px; 
+}
+
+.cfbfastr-pic {
+  grid-row: 9 / 10;
+  grid-column: 1 / 2;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+
+.cfbfastr-desc {
+  grid-row: 9 / 10;
+  grid-column: 2 / -1;
+  padding: 5px 5px; 
+}
+
+.bpa-pic {
+  grid-row: 10 / 11;
+  grid-column: 1 / 2;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+
+.bpa-desc {
+  grid-row: 10 / 11;
   grid-column: 2 / -1;
   padding: 5px 5px; 
 }
