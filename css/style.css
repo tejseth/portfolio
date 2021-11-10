@@ -487,6 +487,102 @@ input[type=submit]:hover {
 }
 
 
-@media screen and (min-width: 850px) {
-  
+@media screen and (min-width: 750px) and (max-width: 1025px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+  }
+
+  .links ul {
+    flex-direction: row;
+    font-size: 20px; 
+  }
+
+  .container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 40px; 
+    padding-top: 10px;
+    text-align:center;
+  }
+
+  h2 {
+    font-size: 22px; 
+  }
+
+  p {
+    font-size: 18px; 
+  }
+
+  .button, .connect-button {
+    margin: auto;
+    width: 50%;
+    background-color:#415280; 
+    padding: 14px 28px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 8px;
+    justify-content: center;
+    box-shadow: 0 4px 4px;
+    text-decoration: none;
+  }
+
+.mfans-desc ul, .reach-desc ul, .shiny-desc ul, .nflfastr-desc ul, .github-desc ul,
+  .bpa-desc ul {
+  padding-left: 20px; 
+}
+
+.mfans-desc a, .reach-desc a, .shiny-desc a, .nflfastr-desc a, .github-desc a,
+.bpa-desc a {
+  margin: auto;
+  width: 50%;
+  background-color: #415280; 
+  padding: 7px 14px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0 4px 4px;
+  text-decoration: none;
+  color: #ffffff; 
+}
+
+.mfans-desc h2, .cmu-desc h2, .shiny-desc h2, .nflfastr-desc h2, 
+.gtihub-desc h2, .bpa-desc h2, .reach-desc h2, .github-desc h2,
+.cfbfastr-desc h2 {
+  font-size: 28px; 
+}
+
+.mfans-desc p, .cmu-desc p, .shiny-desc p, .nflfastr-desc p, 
+.gtihub-desc p, .bpa-desc p, .reach-desc p, .github-desc p,
+.cfbfastr-desc p {
+  font-size: 20px; 
+}
+
+.reach-pic > img {
+  display: block;
+  margin: auto; 
+  width: 80%;
+}
+
+.mfans-pic > img, .cmu-pic > img, .shiny-pic > img,
+.nflfastr-pic > img, .github-pic > img, .cfbfastr-pic > img,
+.bpa-pic > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.pff-button, .si-button {
+  font-size: 20px; 
+}
+
+
 }
