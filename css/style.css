@@ -505,9 +505,111 @@ input[type=submit]:hover {
 @media screen and (min-width: 750px) {
 
   .grid {
-    display: grid;
-    align-items: center; /* left and right */
-    justify-content: center; /* up and down */
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar {
+    grid-column: 1 / -1;
+  }
+  
+  .projects-header {
+    grid-column: 1 / -1;
+    padding-bottom: 20px;
+  }
+
+  .reach-pic {
+    grid-row: 3 / 4; 
+    grid-column: 1 / 2; 
+  }
+
+  .reach-pic > img {
+    display: block;
+    margin: auto; 
+    width: 60%;
+  }
+
+  .reach-desc {
+    padding-left: 10px; 
+    grid-row: 4 / 5;
+    grid-column: 1 / 2; 
+  }
+
+  .mfans-pic {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3; 
+  }
+
+  .cmu-pic {
+    padding-top: 30px; 
+    grid-row: 5 / 6;
+    grid-column: 1 / 2; 
+  }
+
+  .cmu-desc {
+    padding-left: 10px; 
+    grid-row: 6 / 7;
+    grid-column: 1 / 2; 
+  }
+
+  .shiny-pic {
+    padding-top: 30px; 
+    grid-row: 5 / 6;
+    grid-column: 2 / 3; 
+  }
+
+  .shiny-desc {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3; 
+    padding-right: 20px; 
+  }
+
+  .nflfastr-pic {
+    padding-top: 10px; 
+    grid-row: 7 / 8;
+    grid-column: 1 / 2;
+  }
+
+  .nflfastr-desc {
+    padding-left: 10px; 
+    grid-row: 8 / 9;
+    grid-column: 1 / 2;
+  }
+
+  .github-pic {
+    padding-top: 10px;
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+  }
+
+  .github-desc {
+    grid-row: 8 / 9;
+    grid-column: 2 / 3; 
+    padding-right: 20px; 
+  }
+
+  .cfbfastr-pic {
+    padding-top: 10px; 
+    grid-row: 9 / 10;
+    grid-column: 1 / 2;
+  }
+
+  .cfbfastr-desc {
+    padding-left: 10px; 
+    grid-row: 10 / 11;
+    grid-column: 1 / 2; 
+  }
+
+  .bpa-pic {
+    padding-top: 10px; 
+    grid-row: 9 / 10;
+    grid-column: 2 / 3;
+  }
+
+  .bpa-desc {
+    grid-row: 10 / 11;
+    grid-column: 2 / 3; 
+    padding-right: 20px; 
   }
 
   .navbar {
@@ -535,7 +637,7 @@ input[type=submit]:hover {
   }
 
   h2 {
-    font-size: 22px; 
+    font-size: 18px; 
   }
 
   p {
@@ -589,12 +691,6 @@ input[type=submit]:hover {
   padding-left: 20px; 
 }
 
-.reach-pic > img {
-  display: block;
-  margin: auto; 
-  width: 80%;
-}
-
 .mfans-pic > img, .cmu-pic > img, .shiny-pic > img,
 .nflfastr-pic > img, .github-pic > img, .cfbfastr-pic > img,
 .bpa-pic > img {
@@ -609,6 +705,8 @@ input[type=submit]:hover {
 .pff-button, .si-button {
   font-size: 20px; 
 }
+
+
 
 @media screen and (min-width: 1025px) {
 
