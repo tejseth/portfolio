@@ -85,7 +85,8 @@ footer {
   }
 }
 
-.button, .connect-button {
+.button, .connect-button-resume, 
+.connect-button-twitter, .connect-button-link {
   margin: auto;
   width: 50%;
   background-color:#415280; 
@@ -98,12 +99,14 @@ footer {
   text-decoration: none;
 }
 
-.button a, .connect-button a {
+.button a, .connect-button-resume a,
+.connect-button-twitter a, .connect-button-resume a {
   text-decoration: wavy;
   color:#ffffff;
 }
 
-.button a:hover, .connect-button a:hover {
+.button a:hover, .connect-button a:hover,
+.connect-button-twitter a, .connect-button-link a {
   text-decoration: underline;
   color:#ffffff;
 }
@@ -501,6 +504,21 @@ input[type=submit]:hover {
     top: 10px; 
   }
 
+  .connect-button-resume {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+  }
+
+  .connect-button-twitter {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+  }
+
+  .connect-button-link {
+    grid-row: 3 / 4;
+    grid-column: 2 / -1;
+  }
+
 
 @media screen and (min-width: 750px) {
 
@@ -704,14 +722,13 @@ input[type=submit]:hover {
 
 .pff-button, .si-button {
   font-size: 20px; 
+  }
+
 }
-
-
 
 @media screen and (min-width: 1025px) {
 
   .navbar {
-
     background-color: #000000;
   }
 
@@ -724,6 +741,189 @@ input[type=submit]:hover {
     height: 10%;
   }
 
-}
+  .grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .reach-pic {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2; 
+  }
+
+  .reach-desc {
+    padding-right: 10px; 
+    grid-row: 4 / 5;
+    grid-column: 1 /2;
+  }
+
+  .mfans-pic {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+
+  .mfans-desc {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+
+  .cmu-pic {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+  }
+
+  .cmu-desc {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+  }
+
+  .shiny-pic {
+    grid-row: 3 / 4;
+    grid-column: 4 / -1; 
+  }
+
+  .shiny-desc {
+    grid-row: 4 / 5;
+    grid-column: 4 / -1;
+  }
+
+  .nflfastr-pic {
+    padding-top: 15px;
+    grid-row: 5 / 6;
+    grid-column: 1 / 2; 
+  }
+
+  .nflfastr-desc {
+    grid-row: 6 / 7;
+    grid-column: 1 / 2; 
+  }
+
+  .github-pic {
+    padding-top: 15px;
+    grid-row: 5 / 6;
+    grid-column: 2 /3; 
+  }
+
+  .github-desc {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3; 
+  }
+
+  .cfbfastr-pic {
+    padding-top: 15px;
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+  }
+  
+  .cfbfastr-desc {
+    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+  }
+
+  .bpa-pic {
+    padding-top: 15px;
+    grid-row: 5 / 6;
+    grid-column: 4 / -1;
+  }
+
+  .bpa-desc {
+    grid-row: 6 / 7;
+    grid-column: 4 / -1;
+  }
+
+  .image-section > img {
+    width: 30%; 
+  }
+
+  .exp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .exp-header {
+    grid-column: 1 / -1;
+  }
+
+  .first-card {
+    grid-column: 1 / 2;
+    position: relative;
+  }
+
+  .second-card {
+    grid-column: 2 / -1;
+    position: relative;
+  }
+
+  .first-card h2, .second-card h2 {
+    text-align: center; 
+    padding-bottom: 10px; 
+    font-size: 30px; 
+  }
+  
+  .first-card p, .second-card p {
+    padding-top: 10px; 
+    text-align: left; 
+    padding-bottom: 50px; 
+  }
+
+  .pff-button {
+    position: absolute;
+    bottom: 10px; 
+    margin: auto; 
+    padding-left: auto;
+    padding-right: auto; 
+  }
+
+  .si-button {
+    position: absolute;
+    bottom: 8px;
+    margin: auto; 
+  }
+
+  .connect-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .connect-resume {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2; 
+  } 
+
+  .connect-button-resume {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2; 
+  }
+
+  .connect-twitter {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .connect-button-twitter {
+    grid-row: 3 /4;
+    grid-column: 2 / 3;
+  }
+
+  .connect-linkedin {
+    grid-row: 2 /3;
+    grid-column: 3 / -1;
+  }
+
+  .connect-button-link {
+    grid-row: 3/ 4;
+    grid-column: 3 / -1;
+  }
+
+  .connect-linkedin > img, .connect-resume > img,
+  .connect-twitter > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 40%;
+  }
 
 }
