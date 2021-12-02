@@ -68,7 +68,8 @@ p, h2 {
 
 footer {
   border: 2px solid black;
-  margin: 10px 0;
+  margin: 20px 0;
+  margin-top:auto; 
 }
 
 .logo {
@@ -553,6 +554,12 @@ input[type=submit]:hover {
     grid-column: 2 / -1;
   }
 
+  .contact-text {
+    padding-left: 80px;
+    padding-right: 80px; 
+    padding-bottom: 30px; 
+  }
+
 
 
 @media screen and (min-width: 750px) {
@@ -864,6 +871,18 @@ input[type=submit]:hover {
   .bpa-desc {
     grid-row: 6 / 7;
     grid-column: 4 / -1;
+  }
+
+  .image-section {
+    width: 25;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-section img {
+    width: 50%;
+    height: auto; 
+    justify-content: center;
   }
 
   .image-section > img {

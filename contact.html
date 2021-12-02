@@ -8,7 +8,6 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
   <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
-  <form action = "https://formspree.io/f/xqknzjzg" method = "POST">...</form>
   <title>Contact</title>
 </head>
 
@@ -32,8 +31,23 @@
 </header>
 
 <main id = "main">
+  <div class = "contact-text">
+    <p>One of my favorite things is meeting new people and learning more about them so 
+      feel free to contact me using the form below! If you fill out the form, I will get
+      an email with your name, email, phone number and anything you want to talk about. As
+      you have probably seen from the site, I like to talk about football, coding in R and 
+      true crime podcasts but am open to anything!
+    </p>
+    <br>
+    <p>This form is set up using formspree.io which is a site that allows users to 
+      host the output to their forms there. Like I mentioned earlier, if you fill out
+      the form, I will get an email with your message and all your information that you
+      fill out will be stored on my formspree account so that I can contact you anytime
+      if needed!
+    </p>
+  </div>
   <div class = "form-box">
-    <form action = "action_page.php">
+    <form action = "https://formspree.io/f/xqknzjzg" method = "POST">
       <label for="fname">Full Name</label>
         <input type="text" id="fname" name="fullname" placeholder="Tej Seth">
       <label for="email">Email</label>
@@ -42,7 +56,8 @@
         <input type="text" id="phone" name="phone_num" placeholder="999-999-9999">
       <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Hi Tej, ..." style="height:200px"></textarea>
-      <input type="submit" value="Submit">
+      <!-- <input type="submit" value="Submit"> -->
+      <button class = "button" type = "submit">Submit</button>
     </form>
   </div>
 </main>
