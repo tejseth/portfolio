@@ -141,22 +141,30 @@ footer {
   width: 100%;
 }
 
-.flip-card {
-  background-color: transparent;
-  height: 100%;
-  perspective: 800px;
-  width: 25;
-  display: flex;
-  justify-content: center;
+
+.grid {
+  display: grid; 
+  grid-template-columns: 1fr 2fr;
 }
 
+.flip-card {  
+  background-color: transparent;
+  width: 200px;
+  height: 180px;
+  border-radius: 10px;
+  background-color: #E1F1FF;
+  margin-top: 30px;
+  grid-row: 2 /3;
+}
+
+
 .flip-card-inner {
-  position: relative;
-  width: 55%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  border-radius: 10px;
 }
 
 .flip-card:hover .flip-card-inner,
@@ -166,30 +174,28 @@ footer {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
+  border-radius: 10px;
 }
 
 .flip-card-front {
-  background-color: #ffffff;
+  background-color: #E1F1FF;;
+  color: white;
   color: black;
+  border-radius: 10px;
 }
 
 .flip-card-back {
-  background-color: #415280;
+  background-color: #415F8F;
   color: white;
   transform: rotateY(180deg);
-}
-
-.grid {
-  display: grid; 
-  grid-template-columns: 1fr 2fr;
+  border-radius: 10px;
 }
 
 .navbar {
@@ -199,6 +205,16 @@ footer {
 .projects-header {
   grid-column: 1 / -1;
   padding-bottom: 20px;
+}
+
+.parallax {
+  background-image: url("../images/par.png");
+  padding-top: 20px; 
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mfans-pic {
@@ -499,13 +515,12 @@ input[type=submit]:hover {
 }
 
 .connect-twitter {
-  margin-top: 30px;
   grid-row: 2 /3;
   justify-content: center;
   align-items: center;
 }
 
-.connect-twitter > img {
+.flip-card > img {
   height: 90%;
   width: 80%;
   align-self: center;
@@ -954,6 +969,8 @@ input[type=submit]:hover {
   .connect-twitter {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    padding-left: 120px;
+    margin-top: 30px;
   }
 
   .connect-button-twitter {
@@ -986,6 +1003,13 @@ input[type=submit]:hover {
   .logo {
     animation: none; 
   }
+}
 
-
+@media screen and (prefers-reduced-motion: reduce) {
+  .parallax {
+      background-attachment:scroll !important;
+      background-position:center !important;
+      background-repeat:no-repeat !important;
+      background-size:cover !important;
+  }
 }
