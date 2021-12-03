@@ -993,6 +993,39 @@ input[type=submit]:hover {
     width: 40%;
   }
 
+  .happy {
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+    width: 15%;
+    background-color:#415280; 
+    padding: 14px 28px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px;
+    text-decoration: none;
+    color: #ffffff; 
+  }
+
+  .sad {
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"), auto;
+    width: 15%;
+    background-color:#415280; 
+    padding: 14px 28px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px;
+    text-decoration: none;
+    color: #ffffff; 
+    margin-left: 250px; 
+    margin-top: -50px;
+  }
+
+  .feeling {
+    padding-left: 80px;
+    padding-right: 80px; 
+  }
+
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
