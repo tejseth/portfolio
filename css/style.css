@@ -98,6 +98,7 @@ footer {
   justify-content: center;
   box-shadow: 0 4px 4px;
   text-decoration: none;
+  color: #ffffff; 
 }
 
 .button a, .connect-button-resume a,
@@ -150,9 +151,8 @@ footer {
 .flip-card {  
   background-color: transparent;
   width: 200px;
-  height: 180px;
+  height: 160px;
   border-radius: 10px;
-  background-color: #E1F1FF;
   margin-top: 30px;
   grid-row: 2 /3;
 }
@@ -185,15 +185,11 @@ footer {
 }
 
 .flip-card-front {
-  background-color: #E1F1FF;;
-  color: white;
-  color: black;
   border-radius: 10px;
 }
 
 .flip-card-back {
-  background-color: #415F8F;
-  color: white;
+  color: #000000;
   transform: rotateY(180deg);
   border-radius: 10px;
 }
@@ -1003,13 +999,10 @@ input[type=submit]:hover {
   .logo {
     animation: none; 
   }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
   .parallax {
-      background-attachment:scroll !important;
-      background-position:center !important;
-      background-repeat:no-repeat !important;
-      background-size:cover !important;
+    background-attachment:scroll !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    background-size:cover !important;
   }
 }
