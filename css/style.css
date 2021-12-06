@@ -21,6 +21,74 @@ body {
   margin: .5rem; 
 }
 
+.video {
+  width: 100%;
+  justify-content: center;
+}
+
+.c-video {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-video:hover .controls {
+  transform: translateY(0);
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(100%) translateY(-10px);
+}
+
+.buttons {
+  padding: 10px; 
+}
+
+.buttons button.play:before {
+  content: "\f144";
+}
+
+.buttons button.pause:before {
+  content: "\f28b";
+}
+
+.orange-bar {
+  height: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000000; 
+}
+
+.orange-juice {
+  height: 10px;
+  background-color: orangered; 
+}
+
+.buttons button {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.buttons button:before {
+  content: '\f144';
+  font-family: 'Font Awesome 5 Free';
+  width: 30px;
+  height: 30px;
+  display: inline; 
+  font-size: 28px; 
+  color: #ffffff; 
+  -webkit-font-smoothing: antialised; 
+}
+
 .links ul {
   margin: 0;
   padding: 0;
@@ -420,7 +488,7 @@ footer {
   padding-bottom: 10px;
 }
 
-.first-card, .second-card {
+.first-card, .second-card, .third-card {
   grid-row: 3 / 4;
   padding: 16px; 
   text-align: center;
@@ -431,13 +499,13 @@ footer {
   color: #ffffff; 
 }
 
-.first-card h2, .second-card h2 {
+.first-card h2, .second-card h2, .third-card h2 {
   text-align: center; 
   padding-bottom: 10px; 
   font-size: 20px; 
 }
 
-.first-card p, .second-card p {
+.first-card p, .second-card p, .third-card p {
   padding-top: 10px; 
   text-align: left; 
 }
@@ -971,6 +1039,7 @@ input[type=submit]:hover {
   .exp-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
   }
 
   .exp-header {
@@ -978,22 +1047,30 @@ input[type=submit]:hover {
   }
 
   .first-card {
+    grid-row: 1/ 2; 
     grid-column: 1 / 2;
     position: relative;
   }
 
   .second-card {
-    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
     position: relative;
   }
 
-  .first-card h2, .second-card h2 {
+  .third-card {
+    margin-top: 30px;
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+  }
+
+  .first-card h2, .second-card h2, .third-card h2 {
     text-align: center; 
     padding-bottom: 10px; 
     font-size: 30px; 
   }
   
-  .first-card p, .second-card p {
+  .first-card p, .second-card p, .third-card p {
     padding-top: 10px; 
     text-align: left; 
     padding-bottom: 50px; 
